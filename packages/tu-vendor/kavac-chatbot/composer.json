@@ -1,0 +1,30 @@
+{
+    "name": "tu-vendor/kavac-chatbot",
+    "description": "Paquete de integración para el chatbot Kavac - Conecta Laravel con la API de Django",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tu Nombre",
+            "email": "tu@email.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TuVendor\\KavacChatbot\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TuVendor\\KavacChatbot\\KavacChatbotServiceProvider"
+            ]
+        }
+    }
+}
